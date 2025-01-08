@@ -39,3 +39,19 @@
 # result = matn.find('name')
 
 # print(f"natija: {result}")
+
+# # <=== format ===> *8*
+# matn = 'hello, I\'m {age:.2f} years old.'
+# print(matn.format(age = 17.86587))
+
+# # <=== index ===> *9*
+# matn = 'hello, my name is shakhriyor'
+# result = matn.index('my')
+
+# print(f"natija: {result}")
+
+# # <=== isalnum ===> *10*
+# username = 'shahriyor000000'
+# x = username.isalnum()
+
+# print(f"natija: {x}")
