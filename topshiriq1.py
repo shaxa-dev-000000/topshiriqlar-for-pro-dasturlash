@@ -182,4 +182,17 @@
 # print(f"natija: {result}")
 
 
-# <===  ===>
+# # <=== rpartition ===> *27*
+# matn = 'I like banana, because banana very sweet'
+# result = matn.rpartition('banana')
+
+# print(f"natija: {result}")
+
+
+# # <=== rsplit ===> *28*
+# matn = 'apple, banana, peach'
+# result = matn.rsplit(', ')
+
+# print(f"natija: {result}")
+
+
