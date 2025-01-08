@@ -196,3 +196,50 @@
 # print(f"natija: {result}")
 
 
+# # <=== split ===> *29*
+# matn = 'hello world'
+# result = matn.split(' ')
+
+# print(f"natija: {result}")
+
+
+# # <=== splitlines ===> *30*
+# matn = 'my name is shakhriyor \nmy surname is ismatov'
+# result = matn.splitlines()
+
+# print(f"natija: {result}")
+
+
+# # <=== startswith ===> *31*
+# matn = 'made in china'
+# result = matn.startswith('made')
+
+# print(f"natija: {result}")
+
+
+# # <=== strip ===> *32*
+# matn = '.....,,,,,,banana,,,,,ddd,,,,oooo'
+# result = matn.strip('.,do')
+
+# print(f"natija: {result}")
+
+
+# # <=== swapcase ===> *33*
+# matn = 'Hello World'
+# result = matn.swapcase()
+
+# print(f"natija: {result}")
+
+
+# # <=== upper ===> *34*
+# matn = 'hello world'
+# result = matn.upper()
+
+# print(f"natija: {result}")
+
+
+# # <=== zfill ===> *35*
+# matn = '100'
+# result = matn.zfill(7)
+
+# print(f"natija: {result}")
