@@ -18,9 +18,9 @@
 
 
 # # <=== count() ===>
-# fruits = ['apple', 'banana', 'cherry']
+# fruits = ['apple', 'banana', 'cherry', 'banana']
 # x = fruits.count('banana')
-# print(x) # output => 1
+# print(x) # output => 2
 
 
 # # <=== extend() ===>
@@ -28,6 +28,24 @@
 # vegetables = ['potato', 'tomato', 'onion']
 # fruits.extend(vegetables)
 # print(fruits) # output => ['apple', 'banana', 'cherry', 'potato', 'tomato', 'onion']
+
+
+# # <=== index() ===>
+# fruits = ['apple', 'banana', 'cherry']
+# x = fruits.index('cherry')
+# print(x) # output => 2
+
+
+# # <=== insert() ===>
+# fruits = ['apple', 'banana', 'cherry']
+# fruits.insert(1, 'peach')
+# print(fruits) # output => ['apple', 'peach', 'banana', 'cherry']
+
+
+# # <=== pop() ===>
+# fruits = ['apple', 'banana', 'cherry']
+# fruits.pop(0)
+# print(fruits) # output => ['banana', 'cherry']
 
 
 # 
