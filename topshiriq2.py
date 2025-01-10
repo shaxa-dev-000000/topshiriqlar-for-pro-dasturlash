@@ -48,4 +48,19 @@
 # print(fruits) # output => ['banana', 'cherry']
 
 
-# 
+# # <=== remove() ===>
+# fruits = ['apple', 'banana', 'cherry']
+# fruits.remove('banana')
+# print(fruits) # output => ['apple', 'cherry']
+
+
+# # <=== reverse() ===>
+# fruits = ['apple', 'banana', 'cherry']
+# fruits.reverse()
+# print(fruits) # output => ['cherry', 'banana', 'apple']
+
+
+# # <=== sort() ===>
+# fruits = ['cherry', 'apple', 'peach', 'banana']
+# fruits.sort()
+# print(fruits) # output => ['apple', 'banana', 'cherry', 'peach']
