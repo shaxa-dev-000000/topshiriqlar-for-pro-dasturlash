@@ -121,4 +121,4 @@
 # elif 5 < trafik:
 #     print("Sizga 'Unlimited' tarifi mos keladi")
 # else:
-#     print("Noto'g'ri ma'lumot kiritildi")
+#     print("Noto'g'ri ma'lumot kiritildi") 
