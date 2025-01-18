@@ -104,3 +104,5 @@
 #             break
 #         else:
 #             print(f"{sum} so'm {int(sum)/12600} dollarga teng bo'ladi")
+# else:
+#     print("Noto'g'ri buyruq kiritildi")
