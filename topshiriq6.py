@@ -203,7 +203,7 @@
 #     max_price_index = prices.index(max_price)
 #     phone_name = phone_names[max_price_index]
 
-#     print(f"Eng qimmat telefon bu {phone_name}, uning narxi {1200}$")
+#     print(f"Eng qimmat telefon bu {phone_name}, uning narxi {max_price}$")
 
 
 # products = [
