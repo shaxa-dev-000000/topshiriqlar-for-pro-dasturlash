@@ -1,19 +1,14 @@
-class Person:
-    level = "junior"
+class Calculator:
+    a = 3
+    b = 4
 
-    def __init__(self, name, age, gender):
-        self.name = name
-        self.age = age
-        self.gender = gender
+    def add(self):  # oddiy method
+        return self.a + self.b
 
-    def get_name(self):
-        print(self.name)
-
-    def get_level(self, lvl):
-        self.level = lvl
+    def multiply(self):
+        sum_result = self.add()
+        return sum_result * 2
 
 
-person = Person("shaxriyor", 18, "man")
-person.get_level("middle")
-
-print(person.level)
+calc = Calculator()  # obyekt yaratamiz
+print(calc.multiply())  # Natija: 14
