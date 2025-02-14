@@ -14,6 +14,6 @@ class Person:
 
 
 person = Person("shaxriyor", 18, "man")
-person.get_level(lvl="middle")
+person.get_level("middle")
 
 print(person.level)
