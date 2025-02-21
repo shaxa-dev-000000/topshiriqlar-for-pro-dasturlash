@@ -129,119 +129,119 @@
 # truck.more_info()
 
 
-# <=== 3 - masala ===>
-class University:
-    def __init__(self):
-        self.university = "O'zMU"
-    
-    def info(self):
-        print(f"University: {self.university}")
-
-# # <== 3.1 ==> ------------------------------------>
-# class Staff(University):
+# # <=== 3 - masala ===>
+# class University:
 #     def __init__(self):
-#         super().__init__()
-#         self.first_name = "Mahmudova"
-#         self.last_name = "Nigina"
-#         self.age = 34
+#         self.university = "O'zMU"
     
-#     def staff_info(self):
-#         self.info()
-#         print(f"First name: {self.first_name}")
-#         print(f"Last name: {self.last_name}")
-#         print(f"Age: {self.age}")
+#     def info(self):
+#         print(f"University: {self.university}")
 
-# class Student(Staff):
-#     def __init__(self):
-#         super().__init__()
-#         self.group = "24_01"
-#         self.first_name = "Ismatov"
-#         self.last_name = "Shaxriyor"
-#         self.age = 18
+# # # <== 3.1 ==> ------------------------------------>
+# # class Staff(University):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.first_name = "Mahmudova"
+# #         self.last_name = "Nigina"
+# #         self.age = 34
     
-#     def more_info(self):
-#         self.info()
-#         print(f"First name: {self.first_name}")
-#         print(f"Last name: {self.last_name}")
-#         print(f"Group: {self.group}")
-#         print(f"Age: {self.age}\n")
+# #     def staff_info(self):
+# #         self.info()
+# #         print(f"First name: {self.first_name}")
+# #         print(f"Last name: {self.last_name}")
+# #         print(f"Age: {self.age}")
 
-# class Teacher(Staff):
-#     def __init__(self):
-#         super().__init__()
-#         self.position = "Lecturer"
-#         self.subject = "Tyutor"
+# # class Student(Staff):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.group = "24_01"
+# #         self.first_name = "Ismatov"
+# #         self.last_name = "Shaxriyor"
+# #         self.age = 18
     
-#     def more_info(self):
-#         self.info()
-#         print(f"First name: {self.first_name}")
-#         print(f"Last name: {self.last_name}")
-#         print(f"Position: {self.position}")
-#         print(f"Subject: {self.subject}\n")
+# #     def more_info(self):
+# #         self.info()
+# #         print(f"First name: {self.first_name}")
+# #         print(f"Last name: {self.last_name}")
+# #         print(f"Group: {self.group}")
+# #         print(f"Age: {self.age}\n")
 
-# class OtherStaff(Staff):
-#     def __init__(self):
-#         super().__init__()
-#         self.first_name = "Po'latov"
-#         self.last_name = "Akmal"
-#         self.position = "Professor"
+# # class Teacher(Staff):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.position = "Lecturer"
+# #         self.subject = "Tyutor"
     
-#     def more_info(self):
-#         self.info()
-#         print(f"First name: {self.first_name}")
-#         print(f"Last name: {self.last_name}")
-#         print(f"Position: {self.position}")
+# #     def more_info(self):
+# #         self.info()
+# #         print(f"First name: {self.first_name}")
+# #         print(f"Last name: {self.last_name}")
+# #         print(f"Position: {self.position}")
+# #         print(f"Subject: {self.subject}\n")
 
-
-# student = Student()
-# student.more_info()
-
-# teacher = Teacher()
-# teacher.more_info()
-
-# otherstaff = OtherStaff()
-# otherstaff.more_info()
-
-
-# <== 3.2 ==> ------------------------------------>
-class Object(University):
-    def __init__(self):
-        super().__init__()
-        self.name = "Mirzo Ulug'bek"
+# # class OtherStaff(Staff):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.first_name = "Po'latov"
+# #         self.last_name = "Akmal"
+# #         self.position = "Professor"
     
-    def object_info(self):
-        self.info()
-        print(f"Name: {self.name}")
+# #     def more_info(self):
+# #         self.info()
+# #         print(f"First name: {self.first_name}")
+# #         print(f"Last name: {self.last_name}")
+# #         print(f"Position: {self.position}")
 
-class Computers(Object):
-    def __init__(self):
-        super().__init__()
-        self.total_number = 40
-        self.os = "Windows 11"
-        self.state = "Normal"
+
+# # student = Student()
+# # student.more_info()
+
+# # teacher = Teacher()
+# # teacher.more_info()
+
+# # otherstaff = OtherStaff()
+# # otherstaff.more_info()
+
+
+# # # <== 3.2 ==> ------------------------------------>
+# # class Object(University):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.name = "Mirzo Ulug'bek"
     
-    def object_more_info(self):
-        self.object_info()
-        print(f"Total number of computers: {self.total_number}")
-        print(f"Operation System: {self.os}")
-        print(f"System state: {self.state}\n")
+# #     def object_info(self):
+# #         self.info()
+# #         print(f"Name: {self.name}")
 
-class Mebel(Object):
-    def __init__(self):
-        super().__init__()
-        self.total_number = 120
-        self.type = "Soft"
-        self.state = "Normal"
+# # class Computers(Object):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.total_number = 40
+# #         self.os = "Windows 11"
+# #         self.state = "Normal"
     
-    def object_more_info(self):
-        self.object_info()
-        print(f"Total number of mebels: {self.total_number}")
-        print(f"Type: {self.type}")
-        print(f"Mebel state: {self.state}")
+# #     def object_more_info(self):
+# #         self.object_info()
+# #         print(f"Total number of computers: {self.total_number}")
+# #         print(f"Operation System: {self.os}")
+# #         print(f"System state: {self.state}\n")
+
+# # class Mebel(Object):
+# #     def __init__(self):
+# #         super().__init__()
+# #         self.total_number = 120
+# #         self.type = "Soft"
+# #         self.state = "Normal"
+    
+# #     def object_more_info(self):
+# #         self.object_info()
+# #         print(f"Total number of mebels: {self.total_number}")
+# #         print(f"Type: {self.type}")
+# #         print(f"Mebel state: {self.state}")
 
 
-computers = Computers()
-computers.object_more_info()
+# # computers = Computers()
+# # computers.object_more_info()
 
-mebel = Mebel()
-mebel.object_more_info()
+# # mebel = Mebel()
+# # mebel.object_more_info()
