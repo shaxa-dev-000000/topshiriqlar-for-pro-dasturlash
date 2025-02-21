@@ -1,37 +1,52 @@
-Oson1. "Oson1" nomli klass elon qiling. Bu klassda "a" integer o'zgaruvchi bor.
-output_a() - bu funksiya klassdagi "a" ni qiymatini print qilsin.
+1. 
+  "Texnika" parent klass. Konstruktorida esa (brand, model, type) parametrlari bor.
+    info() - (brand, model, type) ni print qilib beradi.
 
-Oson2. "Oson2" nomli klass elon qililar. Bu klassda "a" va "b" integer o'zgaruvchilari bor.
-summa() - bu funksiya klassdagi "a" va "b" ni yig'indisini print qilsin.
+  "Notebooks" child klassi bor. Unda konstruktirida qo'shimcha (video_card, ram, display).
+    more_info() - (brand, model, type, video_card, ram, display) ni print qilib beradi.
+    
+  "Televisions" child klassi bor. Unda konstruktirida (size, display) parametrlari bor.
+    more_info() - (brand, model, type, size, display) ni print qilib beradi.
+  
+  "Smartphones" child klassi bor. Unda konstruktirida (size, sim_count) parametrlari bor.
+    more_info() - (brand, model, type, size, sim_count) ni print qilib beradi.
+    
+    
+2.
+  "Transport" parent klass. Konstruktorida esa (brand, model, type) parametrlari bor.
+    info() - (brand, model, type) ni print qilib beradi.
+    
+  "ElentroCars" - child klassi bor. Unda konstruktirida qo'shimcha (battery_life, chargin_time).
+    more_info() - (brand, model, type, battery_life, chargin_time) ni print qilib beradi.
 
-Oson3. "Oson3" nomli klass elon qililar. Bu klassda "a" integer o'zgaruvchisi bor.
-plus_minus() - bu funksiya klassdagi "a" ni musbat yoki manfiy ekanligini print qilsin.
+  "SportCars" - child klassi bor. Unda konstruktirida qo'shimcha (motor, color).
+    more_info() - (brand, model, type, motor, color) ni print qilib beradi.
+    
+  "Truck" - child klassi bor. Unda konstruktirida qo'shimcha (motor, height, long, wieght).
+    more_info() - (brand, model, type, height, long, wieght) ni print qilib beradi.
 
-Oson4. "Oson4" nomli klass elon qililar. Bu klassda "a" integer o'zgaruvchi bor.
-odd_even() - bu funksiya klassdagi "a" ni to'g yoki juft ekanligini print qilib bersin.
+3.1
+  "University" - parent klass. Konstruktorida esa (university) parametrlari bor.
+    info() - (university) ni print qilib beradi.
+    
+  "Staff" - child klass. Unda konstruktirida qo'shimcha (first_name, last_name, age) parametrlari bor.
+    staff_info() - (university, first_name, last_name, age) ni print qilib beradi.
+  
+  "Student" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (group) parametrlari bor.
+    more_info() - (university, first_name, last_name, age, group) ni print qilib beradi.
+    
+  "Teacher" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (position, subject) parametrlari bor.
+    more_info() - (university, first_name, last_name, position, subject) ni print qilib beradi.
+  
+  "OtherStaff" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (position) parametrlari bor.
+    more_info() - (university, first_name, last_name, position,) ni print qilib beradi.
 
-Oson5. "Oson5" nomli klass elon qililar. Bu klassda "a" va "b" integer o'zgaruvchisi bor.
-daraja() - bu funksiya klassdagi "a" ni "b" chi darajasini print qilsin.
-
-6. "MyClass6" nomli klass elon qililar. Bu klassda "words" list bo'sh o'zgaruvchisi bor.
-add_word(word) - bu funksiya "words" ga element qo'shib qo'ysin.
-remove(word) = bu funksiya "words" da "word" ni o'chirib tashlasin.
-
-7. "MyClass7" nomli klass elon qiling. Bu klassda bo'sh "myDict" dictionary o'zgaruvchisi bor.
-add_elem(key, val) - bu funksiya "myDict" "key" ni qiymatiga teng bo'lgan key bo'lmasa "val" ni add qilsin,
-bor bolsa xech narsa qilmasin.
-update_elem(key, val) - bu funksiya "myDict" shu "key" ni qiymatiga teng bolgan key bo'lsa "val" ni update qilsin,
-yoq bolsa xech narsa qilmasin.
-
-8. "MyClass8" nomli klass elon qililar. Bu klassdan "numbers" list o'zgaruvchisi bor.
-compare_lists(new_list) - bu funksiya klassdagi "numbers" ni elementlar yig'indisi
-"new_list" ni elementlar yig'indisidan katta aniqlab katta listni print qilsin.
-
-9. "MyClass9" nomli klass elon qililar. Bu klassdan "list1" va "list2" list o'zgaruvchilari bor.
-list1_max() - bu funksiya klassdagi "list1" dan maximumni topib return qilsin.
-list2_max() - bu funksiya klassdagi "list2" dan maximumni topib return qilsin.
-sum_of_two_max() - bu funksiya klassdagi list1_max() va list2_max() foydalanib ikkita maximumni topib yig'indisini print qilsin.
-
-10. "MyClass10" nomli klass elon qililar. Bu klass "numbers" list o'zgaruvchilari bor.
-divide(d) - bu funksiya klassadagi "numbers" list elementlarini "d" qoldiqsiz bo'linsa bitta list yig'sin funksiyani ichida.
-va funksiya oxirida bolinadigonlarni listini return qilsin.
+3.2
+"Object" - child klass. U "University" dan vorislik oladi. Unda konstruktirida qo'shimcha (name) parametrlari bor.
+    object_info() - (university, name) ni print qilib beradi.
+  
+  "Computer" - child klass. U "Object" dan vorislik oladi. Unda konstruktirida qo'shimcha (soni, tizimi, holati) parametrlari bor.
+    object_more_info() - (university, name, soni, tizimi, holati) ni print qilib beradi.
+    
+  "Mebel" - child klass. U "Object" dan vorislik oladi. Unda konstruktirida qo'shimcha (soni, turi, holati) parametrlari bor.
+    object_more_info() - (university, name, soni, turi, holati) ni print qilib beradi.
