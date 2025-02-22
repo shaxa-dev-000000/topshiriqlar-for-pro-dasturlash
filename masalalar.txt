@@ -1,52 +1,26 @@
-1. 
-  "Texnika" parent klass. Konstruktorida esa (brand, model, type) parametrlari bor.
-    info() - (brand, model, type) ni print qilib beradi.
+Instance Method Tasks:
 
-  "Notebooks" child klassi bor. Unda konstruktirida qo'shimcha (video_card, ram, display).
-    more_info() - (brand, model, type, video_card, ram, display) ni print qilib beradi.
-    
-  "Televisions" child klassi bor. Unda konstruktirida (size, display) parametrlari bor.
-    more_info() - (brand, model, type, size, display) ni print qilib beradi.
-  
-  "Smartphones" child klassi bor. Unda konstruktirida (size, sim_count) parametrlari bor.
-    more_info() - (brand, model, type, size, sim_count) ni print qilib beradi.
-    
-    
-2.
-  "Transport" parent klass. Konstruktorida esa (brand, model, type) parametrlari bor.
-    info() - (brand, model, type) ni print qilib beradi.
-    
-  "ElentroCars" - child klassi bor. Unda konstruktirida qo'shimcha (battery_life, chargin_time).
-    more_info() - (brand, model, type, battery_life, chargin_time) ni print qilib beradi.
+1. Create a class BankAccount with an attribute balance. Implement methods deposit, withdraw, and check_balance to deposit, withdraw, and check the balance of the bank account, respectively.
+2. Create a class Rectangle with attributes length and width. Implement methods area, perimeter, and is_square to calculate the area, perimeter, and check if the rectangle is a square, respectively.
+3. Create a class Student with attributes name, age, and grades. Implement methods add_grade, calculate_average, and print_summary to add a grade, calculate the average grade, and print the student's summary, respectively.
+4. Create a class Circle with attribute radius. Implement methods area, circumference, and diameter to calculate the area, circumference, and diameter of the circle, respectively.
+5. Create a class Book with attributes title, author, and current_page. Implement methods open, turn_page, and restart to open the book at a specific page, turn the page, and restart the book at page 1, respectively.
 
-  "SportCars" - child klassi bor. Unda konstruktirida qo'shimcha (motor, color).
-    more_info() - (brand, model, type, motor, color) ni print qilib beradi.
-    
-  "Truck" - child klassi bor. Unda konstruktirida qo'shimcha (motor, height, long, wieght).
-    more_info() - (brand, model, type, height, long, wieght) ni print qilib beradi.
 
-3.1
-  "University" - parent klass. Konstruktorida esa (university) parametrlari bor.
-    info() - (university) ni print qilib beradi.
-    
-  "Staff" - child klass. Unda konstruktirida qo'shimcha (first_name, last_name, age) parametrlari bor.
-    staff_info() - (university, first_name, last_name, age) ni print qilib beradi.
-  
-  "Student" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (group) parametrlari bor.
-    more_info() - (university, first_name, last_name, age, group) ni print qilib beradi.
-    
-  "Teacher" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (position, subject) parametrlari bor.
-    more_info() - (university, first_name, last_name, position, subject) ni print qilib beradi.
-  
-  "OtherStaff" - child klass. U "Staff" dan vorislik oladi. Unda konstruktirida qo'shimcha (position) parametrlari bor.
-    more_info() - (university, first_name, last_name, position,) ni print qilib beradi.
+Class Method Tasks:
 
-3.2
-"Object" - child klass. U "University" dan vorislik oladi. Unda konstruktirida qo'shimcha (name) parametrlari bor.
-    object_info() - (university, name) ni print qilib beradi.
-  
-  "Computer" - child klass. U "Object" dan vorislik oladi. Unda konstruktirida qo'shimcha (soni, tizimi, holati) parametrlari bor.
-    object_more_info() - (university, name, soni, tizimi, holati) ni print qilib beradi.
-    
-  "Mebel" - child klass. U "Object" dan vorislik oladi. Unda konstruktirida qo'shimcha (soni, turi, holati) parametrlari bor.
-    object_more_info() - (university, name, soni, turi, holati) ni print qilib beradi.
+6. Create a class Dog with a class-level attribute total_dogs and a method get_total_dogs that returns the number of dog instances created.
+7. Create a class Computer with class-level attributes total_computers and computers_list. Implement a method add_computer that adds a computer instance to the list and updates the total_computers count.
+8. Create a class Employee with class-level attributes total_employees and employees_list. Implement a method hire_employee that adds an employee instance to the list and updates the total_employees count.
+9. Create a class Television with a class-level attribute average_screen_size and a method update_average_screen_size that updates the average screen size when a new television instance is created.
+10. Create a class Course with class-level attributes total_courses and courses_list. Implement a method add_course that adds a course instance to the list and updates the total_courses count.
+
+
+
+Static Method Tasks:
+
+11. Create a class Math with a static method multiply that takes two numbers and returns their product.
+12. Create a class Temperature with a static method celsius_to_fahrenheit that converts a given Celsius temperature to Fahrenheit.
+13. Create a class Distance with a static method miles_to_kilometers that converts a given distance in miles to kilometers.
+14. Create a class Utility with a static method is_even that checks if a given number is even or not.
+15. Create a class Time with a static method seconds_to_minutes that converts a given time in seconds to minutes and seconds (as a tuple).
