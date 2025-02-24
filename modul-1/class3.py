@@ -205,48 +205,49 @@
 # print(employees_list) 
 
 
-# <=== 9 - masala ===>
-class Television:
-    average_screen_size = 0
-    count = 0
+# # <=== 9 - masala ===>
+# class Television:
+#     average_screen_size = 0
+#     count = 0
 
-    def __init__(self, screen_size):
-        Television.count += 1
-        Television.average_screen_size = (Television.average_screen_size * (Television.count - 1) + screen_size) / Television.count
+#     def __init__(self, screen_size):
+#         Television.count += 1
+#         Television.average_screen_size = (Television.average_screen_size * (Television.count - 1) + screen_size) / Television.count
     
-    @classmethod
-    def update_average_screen_size(cls):
-        return cls.average_screen_size
-    @classmethod
-    def total_tvs(cls):
-        return cls.count
+#     @classmethod
+#     def update_average_screen_size(cls):
+#         return cls.average_screen_size
+#     @classmethod
+#     def total_tvs(cls):
+#         return cls.count
 
-television = Television(32)
-television = Television(43)
-television = Television(54)
-print(Television.update_average_screen_size())
-print(Television.total_tvs())
+# television = Television(32)
+# television = Television(43)
+# television = Television(54)
+# print(Television.update_average_screen_size())
+# print(Television.total_tvs())
 
 
-# <=== 10 - masala ===>
-class Course:
-    total_courses = 0
-    courses_list = []
+# # <=== 10 - masala ===>
+# class Course:
+#     total_courses = 0
+#     courses_list = []
 
-    def __init__(self, course):
-        Course.total_courses += 1
-        Course.courses_list.append(course)
+#     def __init__(self, course):
+#         self.add_course(course)
     
-    @classmethod
-    def add_course(cls):
-        return cls.total_courses, cls.courses_list
+#     @classmethod
+#     def add_course(cls, course):
+#         cls.total_courses += 1
+#         cls.courses_list.append(course)
 
-course = Course("python")
-course = Course("javascript")
-course = Course("java")
-course = Course("flutter")
-course = Course("nodejs")
-print(Course.add_course()[0])
-print(Course.add_course()[1])
+# course = Course("python")
+# course = Course("javascript")
+# course = Course("java")
+# course = Course("flutter")
+# course = Course("nodejs")
+# print(Course.total_courses)
+# print(Course.courses_list)
 
 
+""" ------------ Static Method Tasks ------------ """
