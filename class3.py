@@ -143,3 +143,109 @@
 # book.turn_page()
 
 
+# """ ------------ Class Method Tasks ------------ """
+# # <=== 6 - masala ===>
+# class Dog:
+#     total_dogs = 0
+    
+#     def __init__(self):
+#         Dog.total_dogs += 1
+
+#     @classmethod
+#     def get_total_dogs(cls):
+#         return cls.total_dogs
+
+# dog = Dog()
+# dog = Dog()
+# dog = Dog()
+# dog = Dog()
+# print(dog.get_total_dogs())
+
+
+# # <=== 7 - masala ===>
+# class Computer:
+#     total_computers = 0
+#     computers_list = []
+
+#     def __init__(self, comp):
+#         Computer.total_computers += 1
+#         Computer.computers_list.append(comp)
+    
+#     @classmethod
+#     def add_computer(cls):
+#         return cls.total_computers, cls.computers_list
+
+# comp = Computer("Macbook Pro")
+# comp = Computer("Asus TUF Gaming")
+# comp = Computer("HP Victus")
+# comp = Computer("Lenovo Legion")
+# total_computers, computers_list = comp.add_computer()
+# print(total_computers)
+# print(computers_list)
+
+
+# # <=== 8 - masala ===>
+# class Employee:
+#     total_employees = 0
+#     employees_list = []
+
+#     def __init__(self, employee):
+#         Employee.total_employees += 1
+#         Employee.employees_list.append(employee)
+    
+#     @classmethod
+#     def hire_employee(cls):
+#         return cls.total_employees, cls.employees_list
+
+# employee = Employee("John")
+# employee = Employee("Anna")
+# employee = Employee("Dazy")
+# total_employes, employees_list = employee.hire_employee()
+# print(total_employes) 
+# print(employees_list) 
+
+
+# <=== 9 - masala ===>
+class Television:
+    average_screen_size = 0
+    count = 0
+
+    def __init__(self, screen_size):
+        Television.average_screen_size += screen_size
+        Television.count += 1
+    
+    @classmethod
+    def update_average_screen_size(cls):
+        return cls.average_screen_size / cls.count
+    
+    @classmethod
+    def total_tvs(cls):
+        return cls.count
+
+television = Television(32)
+television = Television(43)
+television = Television(54)
+print(television.update_average_screen_size())
+print(television.total_tvs())
+
+
+# <=== 10 - masala ===>
+class Course:
+    total_courses = 0
+    courses_list = []
+
+    def __init__(self, course):
+        Course.total_courses += 1
+        Course.courses_list.append(course)
+    
+    @classmethod
+    def add_course(cls):
+        return cls.total_courses, cls.courses_list
+
+course = Course("python")
+course = Course("javascript")
+course = Course("java")
+course = Course("flutter")
+course = Course("nodejs")
+print(course.add_course()[0])
+print(course.add_course()[1])
