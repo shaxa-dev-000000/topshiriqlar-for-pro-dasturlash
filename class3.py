@@ -200,7 +200,7 @@
 # employee = Employee("John")
 # employee = Employee("Anna")
 # employee = Employee("Dazy")
-# total_employes, employees_list = employee.hire_employee()
+# total_employes, employees_list = Employee.hire_employee()
 # print(total_employes) 
 # print(employees_list) 
 
@@ -211,13 +211,12 @@ class Television:
     count = 0
 
     def __init__(self, screen_size):
-        Television.average_screen_size += screen_size
         Television.count += 1
+        Television.average_screen_size = (Television.average_screen_size * (Television.count - 1) + screen_size) / Television.count
     
     @classmethod
     def update_average_screen_size(cls):
-        return cls.average_screen_size / cls.count
-    
+        return cls.average_screen_size
     @classmethod
     def total_tvs(cls):
         return cls.count
@@ -225,8 +224,8 @@ class Television:
 television = Television(32)
 television = Television(43)
 television = Television(54)
-print(television.update_average_screen_size())
-print(television.total_tvs())
+print(Television.update_average_screen_size())
+print(Television.total_tvs())
 
 
 # <=== 10 - masala ===>
@@ -247,7 +246,7 @@ course = Course("javascript")
 course = Course("java")
 course = Course("flutter")
 course = Course("nodejs")
-print(course.add_course()[0])
-print(course.add_course()[1])
+print(Course.add_course()[0])
+print(Course.add_course()[1])
 
 
