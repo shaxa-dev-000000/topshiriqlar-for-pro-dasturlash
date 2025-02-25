@@ -251,3 +251,61 @@
 
 
 """ ------------ Static Method Tasks ------------ """
+# # <=== 11 - masala ===>
+# class Math:
+#     @staticmethod
+#     def multiply(a, b):
+#         return a * b
+
+# print(Math.multiply(2, 5))
+# print(Math.multiply(3, 6))
+# print(Math.multiply(8, 4))
+
+
+# # <=== 12 - masala ===>
+# class Temperature:
+#     @staticmethod
+#     def celsius_to_fahrenheit(temp):
+#         return (temp * (9 / 5)) + 32
+
+# print(Temperature.celsius_to_fahrenheit(20))
+# print(Temperature.celsius_to_fahrenheit(25))
+# print(Temperature.celsius_to_fahrenheit(32))
+
+
+# # <=== 13 - masala ===>
+# class Distance:
+#     @staticmethod
+#     def miles_to_kilometers(mile):
+#         return mile * 1.60934
+
+# print(Distance.miles_to_kilometers(10))
+# print(Distance.miles_to_kilometers(450))
+# print(Distance.miles_to_kilometers(60))
+
+
+# # <=== 14 - masala ===>
+# class Utility:
+#     @staticmethod
+#     def is_even(char):
+#         if isinstance(char, int) or isinstance(char, float) or isinstance(char, complex) or char.isdigit():
+#             return True
+#         else:
+#             return False
+
+# print(Utility.is_even(12))
+# print(Utility.is_even("hello"))
+# print(Utility.is_even("10"))
+# print(Utility.is_even(2j))
+# print(Utility.is_even(2.3))
+
+
+# # <=== 15 - masala ===>
+# class Time:
+#     @staticmethod
+#     def seconds_to_minutes(s):
+#         return (s // 60, s % 60) # (minut, second)
+
+# print(Time.seconds_to_minutes(72))
+# print(Time.seconds_to_minutes(114))
+# print(Time.seconds_to_minutes(231)) 
