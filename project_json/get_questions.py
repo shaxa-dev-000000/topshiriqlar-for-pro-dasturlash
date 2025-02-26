@@ -1,9 +1,12 @@
 import json
+import os
+
+file_path = os.path.join(os.path.dirname(__file__), "test.json")
 
 question = []
 answers = []
 
-with open('test.json', 'r') as f:
+with open(file_path, 'r') as f:
     data = json.load(f)
     for i in data:
         question.append(i["question"])
