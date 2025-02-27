@@ -1,7 +1,7 @@
 import json
 import os
 
-file_path = os.path.join(os.path.dirname(__file__), "test.json")
+file_path = os.path.join(os.path.dirname(__file__), "../data/test.json")
 
 question = []
 answers = []

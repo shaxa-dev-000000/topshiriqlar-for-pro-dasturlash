@@ -1,6 +1,6 @@
 # Import Modules ==============>
-from set_question import section1
-from colors import cyan, clear
+from get_and_set.set_question import section1
+from data.colors import cyan, clear
 
 
 # Main Module =============>
@@ -11,8 +11,7 @@ while True:
         1 - o'yinni boshlash
         2 - natijalarni ko'rish
 
-        0 - o'yindan chiqish
-        * - konsolni tozalash""" + clear)
+        0 - o'yindan chiqish""" + clear)
 
     section = input("        -> ")
     if section == "1":
@@ -21,7 +20,5 @@ while True:
         pass
     elif section == "0":
         break
-    elif section == "*":
-        pass
     else:
         print("Noto'g'ri buyruq kiritildi!")
